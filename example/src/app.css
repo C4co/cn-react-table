@@ -1,0 +1,61 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  visibility: visible;
+  vertical-align: top;
+}
+
+html,
+body {
+  font-family: "inter" !important;
+  font-size: 15px;
+  overflow-x: hidden;
+  position: relative;
+
+  @media (max-width: 800px) {
+    font-size: 0.95rem;
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  box-shadow: 0 0 0 30px white inset !important;
+}
+
+.dark-table{
+  /* base */
+  --cn-table-bg: #1c2938;
+  --cn-table-border: #1c2938;
+
+  /* font */
+  --cn-table-title-color: #d8e8fb;
+  --cn-table-font-color: #7d99ba;
+
+  /* border */
+  --cn-table-title-border: #395573;
+  --cn-table-col-border: #26384c;
+
+  /* item */
+  --cn-table-item-stripe: #202f40;
+
+  /* item selected */
+  --cn-table-item-selected: #141e29;
+  --cn-table-col-border-selected: #1d2c3c;
+  --cn-table-font-color-selected: #ffff99;
+
+  /* check */
+  --cn-table-check-border: #3e5b7c;
+
+  /* check selected */
+  --cn-table-check-bg-selected: #ffcc66;
+  --cn-table-check-border-selected: #ffcc66;
+  --cn-table-check-sign: #000000;
+}
