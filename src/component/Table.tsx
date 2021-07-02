@@ -7,7 +7,7 @@ export function Table(props: CNTableProps){
   const labels = Object.keys(props.data[0])
   const [selectedItems, setSelectedItems] = useState(new Set())
   const [page, setPage] = useState(0)
-  const [tableItems] = useState<Array<Array<any>>>(chunk(props.data, props.limitOfItems))
+  const tableItems = chunk(props.data, props.limitOfItems)
 
   useEffect(() => {
     if(props.onSelectItems){
