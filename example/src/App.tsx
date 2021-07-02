@@ -3,6 +3,7 @@ import { Table } from 'cn-react-table'
 import Faker from "faker"
 import styled from "styled-components"
 import { Coda } from "cn-react-coda"
+import { EXAMPLE } from './example'
 
 const data: Object[] = []
 const items: number[] = [...Array.from(Array(1000).keys())]
@@ -31,33 +32,25 @@ items.forEach(() => {
   })
 })
 
-const example = `
-<Table data={data} maxHeigth={400} />
-`
-
 const App = () => {
   return (
     <Wrapper>
-      <h2> Table </h2>
+      <h2> Basic table </h2>
       <br/>
-      <Table
-        maxHeigth={500}
-        data={data}
-      />
+
+      <Table data={data} />
 
       <br/>
 
-      <Coda lang="jsx" theme="dark" code={example} />
+      <Coda lang="javascript" theme="dark" code={EXAMPLE} />
 
-      <br/><br/>
+      <br/><br/><br/><br/><br/>
 
       <h2> Dynamic Table </h2>
+
       <br/>
 
-      <Table
-        data={data}
-        dynamicTable
-        onSelectItems={(items: any) => { console.log(items) }} />
+      <Table data={data} dynamicTable onSelectItems={(items: any) => { console.log(items) }} />
     </Wrapper>
   )
 }
