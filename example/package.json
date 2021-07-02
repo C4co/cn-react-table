@@ -19,7 +19,7 @@
     "@types/react": "file:../node_modules/@types/react",
     "@types/react-dom": "file:../node_modules/@types/react-dom",
     "@types/styled-components": "file:../node_modules/@types/styled-components",
-    "cn-react-coda": "^1.1.5",
+    "cn-react-coda": "^1.1.6",
     "cn-react-table": "file:..",
     "faker": "^5.5.3",
     "react": "file:../node_modules/react",
