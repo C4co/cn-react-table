@@ -158,12 +158,13 @@ export const PageIndicator = styled.span`
 `
 
 export const PageButton = styled.button`
-  padding: 0px 10px 2px 10px;
-  height: 30px;
+  height: 36px;
+  width: 36px;
+  padding-bottom: 3px;
   cursor: pointer;
   font-weight: bold;
   font-size: 20px;
-  border-radius: 3px;
+  border-radius: 30px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
