@@ -7,12 +7,14 @@ export function Table(props: CNTableProps){
   const labels = Object.keys(props.data[0])
   const [selectedItems, setSelectedItems] = useState(new Set())
   const [page, setPage] = useState(0)
-  const tableItems = chunk(props.data, props.limitOfItems)
+  const [tableItems, setTableItems] = useState<Array<Array<any>>>([[]])
 
   useEffect(() => {
     if(props.onSelectItems){
       props.onSelectItems(Array.from(selectedItems))
     }
+
+    setTableItems(chunk(props.data, props.limitOfItems))
   })
 
   function toggleSelection(item: any){
