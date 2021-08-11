@@ -1,4 +1,4 @@
-# cn-react-table (Under construction)
+# CN React Table
 
 > React table components
 
