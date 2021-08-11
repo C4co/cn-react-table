@@ -15,7 +15,7 @@ export function Table(props: CNTableProps){
     }
 
     setTableItems(chunk(props.data, props.limitOfItems))
-  })
+  }, [])
 
   function toggleSelection(item: any){
     const clonedItems = selectedItems
