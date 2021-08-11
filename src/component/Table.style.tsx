@@ -70,6 +70,10 @@ export const Title = styled.th<TitleProps>`
 
 export const Body = styled.tbody`
   width: 100%;
+
+  height: auto !important;
+  opacity: 1 !important;
+  position: relative !important;
 `
 
 type ItemProps = {
