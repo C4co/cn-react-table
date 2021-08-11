@@ -2,8 +2,6 @@ import React from 'react'
 import { Table } from 'cn-react-table'
 import Faker from "faker"
 import styled from "styled-components"
-import { Coda } from "cn-react-coda"
-import { EXAMPLE } from './example'
 
 const data: Object[] = []
 const items: number[] = [...Array.from(Array(1000).keys())]
@@ -15,8 +13,8 @@ const Image = styled.img`
 `
 
 const Wrapper = styled.div`
-  padding: 50px 10px;
-  max-width: 1200px;
+  padding: 20px;
+  background: white;
   margin: 0 auto;
 `
 
@@ -35,21 +33,7 @@ items.forEach(() => {
 const App = () => {
   return (
     <Wrapper>
-      <h2> Basic table </h2>
-      <br/>
-
-      <Table data={data} />
-
-      <br/>
-
-      <Coda lang="javascript" theme="dark" code={EXAMPLE} />
-
-      <br/><br/><br/><br/><br/>
-
-      <h2> Dynamic Table </h2>
-
-      <br/>
-
+      {/* <Table data={data} /> */}
       <Table data={data} dynamicTable onSelectItems={(items: any) => { console.log(items) }} />
     </Wrapper>
   )
